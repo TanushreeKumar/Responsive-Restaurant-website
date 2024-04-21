@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css"  href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+ </head>
+<body>
+    <!--header section starts-->
+    <header>
+        <a href="#" class="logo"><img src="background logo.png"></a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#team">Team</a>
+            <a href="#reservation">Reservation</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu"></i>
+            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+            <a href="login2.html" target="_blank"><i class='bx bxs-user'></i></a>
+        </div>
+        <!-- HTML -->
+        <div class="cart-container">
+            <h2>Shopping Cart</h2>
+            <div class="cart-items"></div>
+            <div class="total">Total: ₹<span class="total-price">0</span></div>
+            <a href="checkout.html"><button class="checkout-btn">Checkout</button></a>
+        </div>
+    </header>
+    <!--header section end-->
+    <!--slider section starts-->
+    <div class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide slide1">
+                    <div class="content">
+                        <h3>Utterly Butterly Delicious</h3>
+                        <h1>Gift voucher</h1>
+                        <p>
+                            give away your beloved customers
+                        </p>
+                        <a href="#about" class="btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide slide2">
+                    <div class="content">
+                        <h3>Sale of 10% this dish</h3>
+                        <h1>The fresh</h1>
+                        <p>
+                            food restaurant
+                        </p>
+                        <a href="#about" class="btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide slide3">
+                    <div class="content">
+                        <h3>we are open</h3>
+                        <h1>fresh food!</h1>
+                        <p>
+                            you will love it
+                        </p>
+                        <a href="#about" class="btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--slider section end-->
+    <section class="welcome" id="about">
+        <h1 class="heading">Welcome!</h1>
+        <center><h3 class="sub-heading"> ~ Luxury & Quality ~ </h3></center>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="quality.jpg">
+                </div>
+                <div class="content">
+                    <h3>PROFESSION LEVEL</h3>
+                    <p>Profresional chefs, staffs and managers.
+                    </p>
+
+                        <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="Chinese-style Honey Chilli Potato Recipe.jpeg.jpg">
+                </div>
+                <div class="content">
+                    <h3>FRESH FOOD GUARANTEED</h3>
+                    <p>Fresh fruits, vegetables and fresh Dairy products.
+                       Handpicked by the farmers.
+                    </p>
+
+                        <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="Premium Photo _ Gulab jamun in bowl _ indian dessert or sweet dish_.jpeg.jpg">
+                </div>
+                <div class="content">
+                    <h3>THE MENU IS PLENTIFUL</h3>
+                    <p>Every Cuisine, Continental Foods</p>
+
+                        <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Menu starts -->
+    <section class="res-menu" id="menu">
+        <h1 class="heading">Food Menu</h1>
+        <center><h3 class="sub-heading"> ~ see what we offer ~ </h3></center>\
+
+        <div class="menu-container">
+            <div class="item">
+                <div class="item-name">
+                    <h2>Main Course</h2>
+                    <img src="cup (1).png">
+                </div>
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Baigan Bharta</h3>
+                        <span class="dots"></span>
+                        <span class="price">₹160</span>
+                        <button class="btn2" id="cart" onclick="myFunction()">
+                            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Bread Omelette</h3>
+                        <span class="dots"></span>
+                        <span class="price">₹80</span>
+                        <button class="btn2" id="cart" onclick="myFunction()">
+                            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Chicken Handi</h3>
+                        <span class="dots"></span>
+                        <span class="price">₹300</span>
+                        <button class="btn2" id="cart" onclick="myFunction()">
+                            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Dal Fry</h3>
+                        <span class="dots"></span>
+                        <span class="price">₹180</span>
+                        <button class="btn2" id="cart" onclick="myFunction()">
+                            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Kidney Bean Curry</h3>
+                        <span class="dots"></span>
+                        <span class="price">₹310</span>
+                        <button class="btn2" id="cart" onclick="myFunction()">
+                            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Lamb Biryani</h3>
+                        <span class="dots"></span>
+                        <span class="price">₹350</span>
+                        <button class="btn2" id="cart" onclick="myFunction()">
+                            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Lamb Rogan Josh</h3>
+                        <span class="dots"></span>
+                        <span class="price">₹280</span>
+                        <button class="btn2" id="cart" onclick="myFunction()">
+                            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Matar Paneer</h3>
+                        <span class="dots"></span>
+                        <span class="price">₹110</span>
+                        <button class="btn2" id="cart" onclick="myFunction()">
+                            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Nutty Chicken Curry</h3>
+                        <span class="dots"></span>
+                        <span class="price">₹220</span>
+                        <button class="btn2" id="cart" onclick="myFunction()">
+                            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Recheado Masala Fish</h3>
+                        <span class="dots"></span>
+                        <span class="price">₹170</span>
+                        <button class="btn2" id="cart" onclick="myFunction()">
+                            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Smocked Haddock Kedgeree</h3>
+                        <span class="dots"></span>
+                        <span class="price">₹210</span>
+                        <button class="btn2" id="cart" onclick="myFunction()">
+                            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Tandoori Chicken</h3>
+                        <span class="dots"></span>
+                        <span class="price">₹540</span>
+                        <button class="btn2" id="cart" onclick="myFunction()">
+                            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+    <!-- Menu ends -->
+    <!--team section starts-->
+    <section class="our-team" id="team">
+        <h1 class="heading">Our Chef</h1>
+        <center>
+            <h3 class="sub-heading"> ~ Experience and Enthusiasm ~ </h3>
+        </center>
+        <div class="our-chef">
+            <div class="item">
+                <div class="image">
+                    <img src="our-chef-1.jpg">
+                </div>
+
+                <div class="chef-info">
+                    <div>
+                        <h3>James Arthur</h3>
+                        <span>master chef</span>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="our-chef-2.jpg">
+                </div>
+
+                <div class="chef-info">
+                    <div>
+                        <h3>Howdy Johnson </h3>
+                        <span>Co-Chef</span>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="our-chef-3.jpg">
+                </div>
+
+                <div class="chef-info">
+                    <div>
+                        <h3>Jerry Robertson</h3>
+                        <span>Co-Chef</span>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+    <!--team section ends-->
+    <!--reservation section starts-->
+    <div class="reservation" id="reservation">
+        <div class="image">
+        </div>
+        <div class="form">
+            <h1 class="heading">Book a Table</h1>
+            <center><h3 class="sub-heading">~ Check Out Our Place ~</h3></center>
+
+            <form action="http://localhost/food/reservation.php" method="post">
+                <div class="form-holder">
+                    <div>
+                        <select id="no_person" name="no_person">
+                            <option>1 person</option>
+                            <option>2 person</option>
+                            <option>3 person</option>
+                            <option>4 person</option>
+                        </select>
+                        <label for="time"></label>
+                        <input type="time" id="time_res" name="time_res" placeholder="Time">
+
+                        <label for="phone_no"></label>
+                        <input type="text" id="phone_no" name="phone_no" placeholder="Phone" maxlength="10">
+                    </div>
+                    <div>
+                        <label for="date"></label>
+                        <input type="date" id="date_res" name="date_res" placeholder="Date">
+
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+
+                        <label for="email_id"></label>
+                        <input type="text" id="email_id" name="email_id" placeholder="Email">
+                    </div>
+                </div>
+                <center><button type="submit" class="btn3" > Book now</button></center>
+            </form>
+        </div>
+    </div>
+    <!--team section ends-->
+    <!--footer section starts-->
+    <section class="footer">
+        <img src="background logo.png" class="logo">
+        <div class="container">
+            <div>
+                <h3>ABOUT US</h3>
+                <p>This is Restaurant Website...Lorem ipsum
+                   dolor sit amet consectetur adipisicing elit. 
+                   Non, aut repellat? Consequuntur tempore eligendi 
+                   rerum reiciendis magni, itaque error, id tempora 
+                   molestias beatae sed exercitationem recusandae 
+                   possimus totam ipsam omnis?
+                   Aage ka aap khud soch lo</p>
+            </div>
+
+            <div>
+                <h3>GET NEWS & OFFERS</h3>
+                <input type="email" name="" placeholder="enter your email">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>CONTACT US</h3>
+                <span>Creative Networks</span>
+                <span>+(91) 8765432109</span>
+                <span>creativenetworks002@gmail.com</span>
+                <span>www.creativenetwork.in</span>
+            </div>
+        </div>
+        <p>&copy;2023 Reserved by creative network</p>
+    </section>
+    <!--footer section ends-->
+
+    <!--jump to top-->
+    <a href="#"><button class="topbtn"><i class="fa-solid fa-angle-up"></i></button></a>
+
+    <!-----JAVASCRIPT CODE------>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+
+function myFunction() {
+  alert("Added to cart please check!");
+}
+
+    var swiper = new Swiper(".home-slider", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop:true,
+    });
+  </script>
+  <script src="resw.js"></script>
+</body>
+</html>
