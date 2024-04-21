@@ -179,13 +179,13 @@ header .icons #menu{
     justify-content: flex-start;
 }
 .home .home-slider .slide1{
-    background: url(foodimg4.jpg);
+    background: url(images/foodimg4.jpg);
 }
 .home .home-slider .slide2{
-    background: url(foodimg3.webp);
+    background: url(images/foodimg3.webp);
 }
 .home .home-slider .slide3{
-    background: url(foodimg6.jpg);
+    background: url(images/foodimg6.jpg);
 }
 .home .home-slider .slide1,
 .home .home-slider .slide2,
@@ -319,7 +319,7 @@ section{
 
 /*menu style starts*/
 .res-menu {
-    background: url(our-menu-bg-1.png)left top no-repeat;
+    background: url(images/our-menu-bg-1.png)left top no-repeat;
     background-color: black;
 }
 .res-menu .menu-container{
@@ -524,7 +524,7 @@ section{
 }
 .reservation .image{
     width: 55%;
-    background: url(f1\ .jpg);
+    background: url(images/f1\ .jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
